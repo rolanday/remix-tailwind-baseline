@@ -1,0 +1,38 @@
+{
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".eslintrc.cjs",
+    "postcss.config.cjs",
+    "prettier.config.cjs",
+    "remix.config.js",
+    "remix.env.d.ts",
+    "remix.env.d.ts",
+    "tailwind.config.cjs"
+  ],
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "target": "ES2022",
+    "strict": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    // If adding bun support need to also include @types/web, else will get
+    // "Cannot find name 'document'." error when building.
+    // See https://github.com/oven-sh/bun/issues/3030 for details.
+    "types": ["bun-types", "web"],
+    "paths": {
+      "~/*": ["./app/*"]
+    },
+    "allowImportingTsExtensions": true,
+    // Remix takes care of building everything in `remix build`.
+    "noEmit": true
+  }
+}
