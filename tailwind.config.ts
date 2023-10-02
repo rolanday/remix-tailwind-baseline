@@ -1,8 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const {
-  iconsPlugin,
-  getIconCollections,
-} = require("@egoist/tailwindcss-icons");
+import { iconsPlugin, getIconCollections } from "@egoist/tailwindcss-icons";
 module.exports = {
   darkMode: ["class"],
   content: ["./app/**/*.{ts,tsx}"],
