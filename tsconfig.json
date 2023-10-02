@@ -8,6 +8,7 @@
     "remix.config.js",
     "remix.env.d.ts",
     "remix.env.d.ts",
+    "server.mjs",
     "tailwind.config.cjs"
   ],
   "compilerOptions": {

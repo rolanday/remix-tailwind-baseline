@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "remix build",
-    "dev": "remix dev --manual -c \"node server.js\"",
-    "start": "cross-env NODE_ENV=production node ./server.js",
+    "dev": "remix dev --manual -c \"node server.mjs\"",
+    "start": "cross-env NODE_ENV=production node ./server.mjs",
     "check": "tsc"
   },
   "dependencies": {
